@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {{ super() }}<br>
+    nestmilk is {{data.dick | default('no name')}}<br>
+    {% for foo in [1,2,3] %}
+        {{ foo }}<br>
+    {% endfor %}
+{% endblock %}
